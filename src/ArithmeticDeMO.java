@@ -19,11 +19,8 @@ public class ArithmeticDeMO {
     Scanner in = new Scanner(System.in);
     System.out.print("정수를 입력해주세요 : ");
     int x = in.nextInt();
-    if(x % 2 == 0) {
-      System.out.println("입력한 정수는 짝수입니다");
-    }
-    else {
-      System.out.println("입력한 정수는 홀수입니다");
-    }
+    int r = x % 2;
+    String s = (r == 0)? "짝수": "홀수";
+    System.out.printf("입력한 수는 %d 이며 %s 입니다", x,s);
   }
 }
