@@ -9,7 +9,7 @@ public class ArithmeticDeMO {
     long result = (long) a * b;
     System.out.println(result);
 
-    int apple = 1;
+    int apple = 2;
     double price = 0.1;
     int number = 7;
 
