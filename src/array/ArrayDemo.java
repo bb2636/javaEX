@@ -1,3 +1,5 @@
+package array;
+
 public class ArrayDemo {
   public static void main(String[] args) {
     int score1 = 100, score2 = 90, score3 = 80, score4 = 70, score5 = 60;

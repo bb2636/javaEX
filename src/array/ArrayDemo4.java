@@ -1,3 +1,5 @@
+package array;
+
 public class ArrayDemo4 {
   public static void main(String[] args) {
     String[] names = new String[3];
