@@ -15,5 +15,10 @@ public class ArrayDemo {
     }
     double average = (double) sum / scores.length;
     System.out.println("average = " + average);
+
+    for (String arg : args) {
+      //ArrayDemoTest > args = null 이기 때문에 실행되지 않음
+      System.out.println("arg = " + arg);
+    }
   }
 }
