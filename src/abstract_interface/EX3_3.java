@@ -1,9 +1,12 @@
 package abstract_interface;
 
+import java.util.Arrays;
+
 public class EX3_3 {
   public static void main(String[] args) {
     Book b1 = new Book(15000);
     Book b2 = new Book(50000);
+    Book b3 = new Book(20000);
 
     int res = b1.compareTo(b2);
     if (res == -999) {
@@ -16,6 +19,16 @@ public class EX3_3 {
       } else {
         System.out.println("가격 같음");
       }
+    }
+
+    Book[] books = {
+        new Book(15000),
+    new Book(30000),
+    new Book(20000)
+    };
+    Arrays.sort(books);
+    for (Book book : books) {
+      System.out.println(book);
     }
   }
 }
