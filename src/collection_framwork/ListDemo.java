@@ -20,8 +20,16 @@ public class ListDemo {
 
 
     Collection<Integer> listc = new ArrayList<>();
+    listc.add(10);
+    listc.add(20);
+    System.out.println(listc);
+    System.out.println(listc.remove(15));
+
     //list는 collection을 상속받음
     List<Integer> list3 = new ArrayList<>();
+    list3.add(10); //[10]
+    list3.add(0,20); //[20,10] 특정 위치에 끼워넣음
+    System.out.println(list3.remove(1));//해당 인덱스 번호의 원소 삭제
     //arraylist는 list를 상속받음
     ArrayList<Integer> list4 = new ArrayList<>();
   }
