@@ -24,7 +24,7 @@ public class EX3_4 {
         new Person("손흥민", 20, 180, 70),
         new Person("홍길동",32,170,75)
     };
-    Arrays.sort(persons);
+    Arrays.sort(persons, ((o1, o2) -> o2.compareTo(o1)));
     for (Person person : persons) {
       System.out.println(person);
     }

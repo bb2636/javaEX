@@ -1,6 +1,7 @@
 package abstract_interface;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class EX3_3 {
   public static void main(String[] args) {
@@ -26,7 +27,7 @@ public class EX3_3 {
     new Book(30000),
     new Book(20000)
     };
-    Arrays.sort(books);
+    Arrays.sort(books, ((o1, o2) -> o2.compareTo(o1)));
     for (Book book : books) {
       System.out.println(book);
     }
