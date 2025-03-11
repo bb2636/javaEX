@@ -30,8 +30,23 @@ public class EX9 {
     System.out.println("최고 점수 : " + maxScore);
     System.out.println("최고 점수를 받은 아이디 : " + name);
     System.out.println();
-    totalScore = 0;
-    maxScore = 0;
-    name = null;
+
+    //entryset 활용
+//    name = null;
+//    maxScore = 0;
+//    Set<Map.Entry<String, Integer>> entrySet = map.entrySet();
+//    Iterator<Map.Entry<String, Integer>> iterator1 = entrySet.iterator();
+//    while (iterator1.hasNext()) {
+//      Map.Entry<String, Integer> entry = iterator1.next();
+//      String key = entry.getKey();
+//      int value = entry.getValue();
+//      totalScore += value;
+//      maxScore = Math.max(maxScore, value);
+//      name = (maxScore <= value) ? key : name;
+//    }
+//    System.out.println("평균 점수 : " + totalScore / map.size());
+//    System.out.println("최고 점수 : " + maxScore);
+//    System.out.println("최고 점수를 받은 아이디 : " + name);
+//  }
   }
 }
