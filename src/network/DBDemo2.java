@@ -6,14 +6,14 @@ public class DBDemo2 {
   public static void main(String[] args) throws SQLException{
     Connection con = makeConnection();
     //?는 아무거나 들어갈 수 있는 값
-    String sql = "update person set email = '?' where phone = '?' and name = '?' ;";
+    String sql = "update person set email = ? where phone = ? and name = ? ;";
 
     PreparedStatement pstmt = con.prepareStatement(sql);
     pstmt.setString(1,"limlim@naver.com");
     pstmt.setString(2,"010-444-4444");
     pstmt.setString(3,"임꺽정");
 
-    int rows = pstmt.executeUpdate(sql);
+    int rows = pstmt.executeUpdate();
       if (rows == 1) {
         System.out.println("정상적 수정");
       } else {
