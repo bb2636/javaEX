@@ -31,17 +31,17 @@ public class ListQueue<E> {
     return find;
   }
 
-  E poll() {
-    // poll 을 구현하되 sLinkedList 의 코드를 활용해보라. removefirst
-    Node<E> removedNode = front;
-    front = front.next;
-    removedNode.next = removedNode;
-    if (size == 1) {
-      front = null;
-    }
-    size--;
-    return removedNode;
-  }
+//  E poll() {
+//    // poll 을 구현하되 sLinkedList 의 코드를 활용해보라. removefirst
+//    Node<E> removedNode = front;
+//    front = front.next;
+//    removedNode.next = removedNode;
+//    if (size == 1) {
+//      front = null;
+//    }
+//    size--;
+//    return removedNode;
+//  }
 
   private class Node<E> {
     E e;
